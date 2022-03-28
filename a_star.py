@@ -125,4 +125,9 @@ def a_star(start, goal='Bucharest'):
 
     return(f"Solução para {start} até {goal}")
 
-print(f"{a_star(start='Oradea')}")
+if __name__ == "__main__":
+    start = sys.argv[1]
+    a_star(start=start)
+
+# Example:
+# $ python a_star.py Oradea
