@@ -41,21 +41,21 @@ dists = {
     ],
     'Pitesti': [
         ('Bucharest',101),
-        ('Rimnicu Vilcea',97),
+        ('Rimnicu_Vilcea',97),
         ('Craiova',138)
     ],
     'Craiova':[
         ('Pitesti',138),
-        ('Rimnicu Vilcea',146),
+        ('Rimnicu_Vilcea',146),
         ('Dobreta',120)
     ],
-    'Rimnicu Vilcea':[
+    'Rimnicu_Vilcea':[
         ('Craiova',146),
         ('Pitesti',97),
         ('Sibiu',80)
     ],
     'Sibiu':[
-        ('Rimnicu Vilcea',80),
+        ('Rimnicu_Vilcea',80),
         ('Fagaras',99),
         ('Oradea',151),
         ('Arad',140)
@@ -111,7 +111,7 @@ straight_line_dists_from_bucharest = {
     'Neamt':234,
     'Oradea':380,
     'Pitesti':100,
-    'Rimnicu Vilcea':193,
+    'Rimnicu_Vilcea':193,
     'Sibiu':253,
     'Timisoara':329,
     'Urzineci':80,

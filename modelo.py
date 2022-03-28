@@ -1,3 +1,5 @@
+from dists import straight_line_dists_from_bucharest
+
 class Node():
 	#Classe que representa um nó (cidade)
 
@@ -6,14 +8,14 @@ class Node():
 		self.heuristica = valor_heuristico
 		self.vizinhos = []
 
-	def __init__(self, nome_cidade, coordenada):
+	def __init__(self, nome_cidade):
 		self.cidade = nome_cidade
-		self.coordenada = coordenada
 		self.heuristica = 0
 		self.vizinhos = []
 
-	def gera_heuristica(self, Node_alvo):
-		self.heuristica = ((self.coordenada[0] - Node_alvo.coordenada[0])**2 + (self.coordenada[1] - Node_alvo.coordenada[1])**2)**0.5
+	def set_heuristica(self, Node_alvo):
+		self.heuristica = straight_line_dists_from_bucharest[Node_alvo.cidade]
+		#self.heuristica = ((self.coordenada[0] - Node_alvo.coordenada[0])**2 + (self.coordenada[1] - Node_alvo.coordenada[1])**2)**0.5
 
 	def get_heuristica(self):
 		return self.heuristica
