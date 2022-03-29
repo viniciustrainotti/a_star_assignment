@@ -106,11 +106,8 @@ def a_star(start, goal='Bucharest'):
     Fila_De_Rotas.append(rota)
 
     while(True):
-        melhores_ramos = []
-        melhor_ramo = None
-
-        index_melhores_ramos = []
-        rota_com_melhor_ramo = None
+        melhores_ramos, index_melhores_ramos = [], []
+        melhor_ramo, rota_com_melhor_ramo = None, None
 
         #Encontra o melhor ramo entre os ramos abertos
         for rota in Fila_De_Rotas:
